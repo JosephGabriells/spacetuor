@@ -5,7 +5,7 @@ let userEmail = document.querySelector("#email");
 let userCpf = document.querySelector("#cpf");
 let userDate = document.querySelector("#data-nascimento");
 let userText = document.querySelector("#texto");
-console.log(userDate.value);
+// console.log(userDate.value);
 
 //Validação
 const validar = () => {
