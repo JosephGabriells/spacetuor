@@ -9,6 +9,7 @@ let userGenF = document.querySelector("#genero-f");
 let userGenM = document.querySelector("#genero-m");
 
 // const forms = form.addEventListener("submit", () => {})
+
 //Validação
 
 const validar = () => {
