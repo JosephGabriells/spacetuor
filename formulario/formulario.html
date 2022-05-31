@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <script src="../js/script.js" defer></script>
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <form
+        class="myForm"
+        action="../index.html"
+        method="get"
+        onsubmit="return(validar())"
+      >
+        <fieldset>
+          <legend>CADASTRO</legend>
+          <br />
+          <div class="input-box">
+            <input type="text" name="nome" id="nome" class="input-user" />
+            <label for="nome" class="label-input">Nome e sobrenome</label>
+          </div>
+          <br /><br />
+          <div class="input-box">
+            <input type="" name="email" id="email" class="input-user" />
+            <label for="nome" class="label-input">E-mail</label>
+          </div>
+          <br /><br />
+          <div class="input-box">
+            <input type="cpf" name="cpf" id="cpf" class="input-user" />
+            <label for="nome" class="label-input">CPF</label>
+          </div>
+          <br />
+          <p>Sexo:</p>
+          <input type="radio" name="genero" value="feminino" id="genero-f" />
+          <label for="feminino">Feminino</label>
+          <input type="radio" name="genero" value="masculino" id="genero-m" />
+          <label for="masculino">Masculino</label>
+          <br /><br /><br />
+          <div class="input-box">
+            <label for="nome">Data de nascimento</label>
+            <input
+              type="date"
+              name="data-nascimento"
+              id="data-nascimento"
+              class="data-nascimento"
+              value=""
+              min="1920-01-01"
+              max="2004-01-01"
+            />
+          </div>
+          <br /><br />
+          <label>Qual a sua motivação para a viagem?</label>
+          <textarea
+            maxlength="50"
+            rows="6"
+            style="width: 26em"
+            name="motivacao"
+            placeholder="Digite aqui sua motivação"
+            id="texto"
+            value=""
+          ></textarea>
+          <br /><br />
+          <input type="submit" name="submit" id="submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
